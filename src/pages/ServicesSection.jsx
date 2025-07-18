@@ -89,7 +89,7 @@ const ServiceCards = () => {
     <div className="w-full">
       <div className="w-full px-4 pt-0">
         <p className="text-black font-bold text-center text-lg sm:text-xl mt-0">
-          What we <span className="!text-sky-300"> do </span>
+          What we <span className="!text-[#01B2C1]"> do </span>
         </p>
         <p className="text-black font-extrabold text-center text-2xl sm:text-3xl md:text-4xl lg:text-[48px] leading-tight">
         Powering industries <br></br> with machines and spare parts

@@ -42,27 +42,27 @@ const Header = ({
     text-xs sm:text-sm md:text-base xl:text-lg 2xl:text-xl font-medium 
     ${liColor} ${hideLi}`}
           >
-            <li className="hover:text-blue-500">Embroidery Machines</li>
-            <li className="hover:text-blue-500">Industrial Machines</li>
+            <li className="hover:text-[#01B2C1]">Embroidery Machines</li>
+            <li className="hover:text-[#01B2C1]">Industrial Machines</li>
 
             <li>
-              <Link href="/visa" className="hover:text-blue-500 block w-full">
+              <Link href="/visa" className="hover:text-[#01B2C1] block w-full">
                 Spare Parts
               </Link>
             </li>
 
-            <li className="hover:text-blue-500">Brands</li>
+            <li className="hover:text-[#01B2C1]">Brands</li>
 
             <li>
               <Link
                 href="/contactus"
-                className="hover:text-blue-500 block w-full"
+                className="hover:text-[#01B2C1] block w-full"
               >
                 Contact Us
               </Link>
             </li>
 
-            <li className="hover:text-blue-500">Testimonials</li>
+            <li className="hover:text-[#01B2C1]">Testimonials</li>
           </ul>
 
           {/* Mobile Logo */}
@@ -84,7 +84,7 @@ const Header = ({
               onClick={showDrawer}
               alt="hamburger-icon"
             />
-            <Drawer title="Menu" onClose={onClose} open={open}>
+            {/* <Drawer title="Menu" onClose={onClose} open={open}>
               <div className="text-2xl text-[#30302e] font-semibold flex flex-col gap-5">
                 <p>Embroidery Machines</p>
                 <p>Industrial Machines</p>
@@ -96,6 +96,62 @@ const Header = ({
                 <Link href="/contactus">
                   <p>Contact</p>
                 </Link>
+              </div>
+            </Drawer> */}
+
+            <Drawer title="Menu" onClose={onClose} open={open}>
+              <div className="flex flex-col gap-4 ">
+                <nav className="flex flex-col gap-4 text-xl font-semibold text-[#30302e]">
+                  <p className="text-3xl font-bold text-[#01B2C1] mb-6 border-b-2 border-[#01B2C1] pb-2">
+                    Explore Categories
+                  </p>
+
+                  <button className="relative group text-left">
+                    <span className="group-hover:text-[#01B2C1] transition-colors duration-200">
+                      Embroidery Machines
+                    </span>
+                    <span className="absolute left-0 -bottom-1 w-0 h-1 bg-[#01B2C1] transition-all duration-300 group-hover:w-full"></span>
+                  </button>
+
+                  <button className="relative group text-left">
+                    <span className="group-hover:text-[#01B2C1] transition-colors duration-200">
+                      Industrial Machines
+                    </span>
+                    <span className="absolute left-0 -bottom-1 w-0 h-1 bg-[#01B2C1] transition-all duration-300 group-hover:w-full"></span>
+                  </button>
+
+                  <Link href="/visa" state={{ visaProp }}>
+                    <button className="relative group text-left w-full">
+                      <span className="group-hover:text-[#01B2C1] transition-colors duration-200">
+                        Spare Parts
+                      </span>
+                      <span className="absolute left-0 -bottom-1 w-0 h-1 bg-[#01B2C1] transition-all duration-300 group-hover:w-full"></span>
+                    </button>
+                  </Link>
+
+                  <button className="relative group text-left">
+                    <span className="group-hover:text-[#01B2C1] transition-colors duration-200">
+                      Brands
+                    </span>
+                    <span className="absolute left-0 -bottom-1 w-0 h-1 bg-[#01B2C1] transition-all duration-300 group-hover:w-full"></span>
+                  </button>
+
+                  <button className="relative group text-left">
+                    <span className="group-hover:text-[#01B2C1] transition-colors duration-200">
+                      Testimonials
+                    </span>
+                    <span className="absolute left-0 -bottom-1 w-0 h-1 bg-[#01B2C1] transition-all duration-300 group-hover:w-full"></span>
+                  </button>
+
+                  <Link href="/contactus">
+                    <button className="relative group text-left w-full">
+                      <span className="group-hover:text-[#01B2C1] transition-colors duration-200">
+                        Contact
+                      </span>
+                      <span className="absolute left-0 -bottom-1 w-0 h-1 bg-[#01B2C1] transition-all duration-300 group-hover:w-full"></span>
+                    </button>
+                  </Link>
+                </nav>
               </div>
             </Drawer>
           </div>

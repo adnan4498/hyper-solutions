@@ -14,6 +14,8 @@ import jinzenMobile2 from "../../public/images/jinzen-mobile-bg2.avif";
 import Marquee from "./Marquee";
 import { ImagesCarousel } from "./ImagesCarousel";
 import ServiceCards from "./ServicesSection";
+import PowerSection from "./PowerSection";
+import Footer from "@/shared/Footer";
 
 export default function Home() {
   const carouselRef = useRef(null);
@@ -82,7 +84,7 @@ export default function Home() {
 
       <div className="w-full mt-32 lg:mt-40">
         <p className="text-black font-bold text-center text-lg sm:text-xl mt-0">
-          Brands and <span className="!text-sky-300"> Products </span>
+          Brands and <span className="!text-[#01B2C1]"> Products </span>
         </p>
         <p className="text-black font-extrabold text-center text-[28px] md:text-4xl lg:text-[48px] leading-tight">
           Trusted names, <br /> delivering performance  <br className="lg:hidden"></br> and reliability
@@ -91,6 +93,14 @@ export default function Home() {
 
       <div className="mt-10 lg:mt-40">
         <ImagesCarousel />
+      </div>
+
+      <div className="mt-10 lg:mt-40">
+        <PowerSection />
+      </div>
+
+      <div className="mt-10 lg:mt-40">
+        <Footer />
       </div>
     </div>
   );

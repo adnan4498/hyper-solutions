@@ -98,7 +98,7 @@ const ProductSection = ({ title, onImageClick, images }) => (
   <section className="w-full px-4 sm:px-6 lg:px-8 my-16">
     <div className="max-w-7xl mx-auto">
       <div className="text-center mb-8">
-        <h2 className="text-4xl font-bold mb-3 h-[60px] bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
+        <h2 className="text-4xl font-bold h-[40px] text-[#01B2C1] bg-clip-text">
           {title}
         </h2>
         <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
