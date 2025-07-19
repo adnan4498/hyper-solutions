@@ -12,13 +12,13 @@ import scissorBg from "../../public/images/scissor-bg.png";
 import jinzenMobile from "../../public/images/jinzen-mobile-bg.jpg";
 import jinzenMobile2 from "../../public/images/jinzen-mobile-bg2.avif";
 import Marquee from "./Marquee";
-import { ImagesCarousel } from "./ImagesCarousel";
 import ServiceCards from "./ServicesSection";
 import PowerSection from "./PowerSection";
 import Footer from "@/shared/Footer";
 
 import whatsapIcon from "../../public/images/whatsapp-icon2.png"
 import Image from "next/image";
+import ImagesCarousel from "./ImagesCarousel";
 
 export default function Home() {
   const carouselRef = useRef(null);
