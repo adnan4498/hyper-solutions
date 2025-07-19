@@ -17,6 +17,9 @@ import ServiceCards from "./ServicesSection";
 import PowerSection from "./PowerSection";
 import Footer from "@/shared/Footer";
 
+import whatsapIcon from "../../public/images/whatsapp-icon2.png"
+import Image from "next/image";
+
 export default function Home() {
   const carouselRef = useRef(null);
 
@@ -87,7 +90,8 @@ export default function Home() {
           Brands and <span className="!text-[#01B2C1]"> Products </span>
         </p>
         <p className="text-black font-extrabold text-center text-[28px] md:text-4xl lg:text-[48px] leading-tight">
-          Trusted names, <br /> delivering performance  <br className="lg:hidden"></br> and reliability
+          Trusted names, <br /> delivering performance{" "}
+          <br className="lg:hidden"></br> and reliability
         </p>
       </div>
 
@@ -101,6 +105,24 @@ export default function Home() {
 
       <div className="mt-10 lg:mt-40">
         <Footer />
+      </div>
+
+      <div class="fixed right-1 bottom-4 z-50 cursor-pointer">
+        <div class="mr-2">
+          <a href="https://wa.me/9203242150061?text=">
+            <Image
+              alt="whatsapp-icon"
+              loading="lazy"
+              width="551"
+              height="453"
+              decoding="async"
+              data-nimg="1"
+              class="w-18 lg:w-24"
+              // style="color:transparent"
+              src={whatsapIcon}
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

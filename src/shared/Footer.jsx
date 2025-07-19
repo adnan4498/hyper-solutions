@@ -56,21 +56,14 @@ const Footer = () => {
             <h3 className="text-gray-400 text-sm font-medium mb-6 tracking-wider">CONTACT</h3>
             <ul className="space-y-3">
               <li className="text-sm">
-                <span className="text-blue-400">U:</span>
-                <span className="text-gray-300 ml-1">(+92) 21-111-111-258</span>
-              </li>
-              <li className="text-sm">
-                <span className="text-blue-400">T:</span>
-                <span className="text-gray-300 ml-1">(+92) 21-350-18638-44</span>
-              </li>
-              <li className="text-sm">
                 <span className="text-blue-400">F:</span>
-                <span className="text-gray-300 ml-1">(+92) 21-350-18631-2</span>
+                <span className="text-gray-300 ml-1">+92 3242150061</span>
+                <span className="text-gray-300 ml-1"> +92 2132800923</span>
               </li>
               <li className="text-sm">
                 <span className="text-blue-400">E:</span>
                 <a href="mailto:CONTACT@ALKARAM.COM" className="text-gray-300 ml-1 hover:text-white transition-colors duration-200">
-                  CONTACT@ALKARAM.COM
+                  interprise.ak@gmail.com
                 </a>
               </li>
             </ul>
@@ -79,16 +72,27 @@ const Footer = () => {
           {/* Address */}
           <div className="text-center md:text-left">
             <h3 className="text-gray-400 text-sm font-medium mb-6 tracking-wider">ADDRESS</h3>
+            <div className='mt-6'>
+              <h3 className="text-gray-400 text-sm font-medium m tracking-wider">Head Office</h3>
+            </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              ALKARAM TEXTILE MILLS (PVT) LTD H-7/11, LANDHI INDUSTRIAL AREA, KARACHI, PAKISTAN.
+              Plot # C-217, Sector 50-A, Korangi, Karachi, Pakistan.
             </p>
+
+            <div className='mt-6'>
+              <h3 className="text-gray-400 text-sm font-medium m tracking-wider">Branch Office</h3>
+            </div>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              AR.07 Ground Floor Gulshan e Iqbal Block 10 AL.Rehman society
+            </p>
+
           </div>
         </div>
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-800">
           <p className="text-gray-500 text-xs text-center md:text-left">
-            © 2021 Alkaram Textile Mills Pvt. Ltd. All rights reserved.
+            © 2025 Hyper Industrial Solutions Ltd. All rights reserved.
           </p>
         </div>
       </div>
