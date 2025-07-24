@@ -7,6 +7,10 @@ body {
   font-family: 'Poppins', sans-serif !important;
 }
 
+ul{
+  margin-bottom: 0px !important;
+}
+
 /* Base styles (fallback/default) */
 .jsx-8b2810b633befb8.w-full.min-h-screen.bg-\[\#c4cfde\].text-white {
   display: flex;
