@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import hamburgerIcon from "../../public/images/hamburger-icon.png";
-import logo from "../../public/images/hyper-logo.png";
+// import logo from "../../public/images/hyper-logo.png";
+import logo from "../../public/images/logo.png";
 
 import Link from "next/link";
 import Image from "next/image";
